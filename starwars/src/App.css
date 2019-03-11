@@ -1,8 +1,23 @@
-.App {
-  text-align: center;
+body {
+  background-image: url('http://localhost:3000/images/background-img.png');
+  background-size: cover;
 }
-.Header {
+header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  
+  background-image: url("http://localhost:3000/images/banner.jpeg");
+  background-size: cover;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.container {
+  padding-top: 40px;
 }
 /* write your parent styles in here for your App.js */
