@@ -1,12 +1,12 @@
 body {
-  background-image: url('http://localhost:3000/images/background-img.png');
+  background-image: url('/images/background-img.png');
   background-size: cover;
 }
 header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
   
-  background-image: url("http://localhost:3000/images/banner.jpeg");
+  background-image: url("/images/banner.jpeg");
   background-size: cover;
   background-color: #000000;
   background-repeat: no-repeat;

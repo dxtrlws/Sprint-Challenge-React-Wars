@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Characters from './components/Characters'
-import Loading from './components/Loading'
-import './App.css';
+import React, { Component } from "react";
+import Characters from "./components/Characters";
+import Loading from "./components/Loading";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters("https://swapi.co/api/people/");
   }
 
   getCharacters = URL => {
@@ -28,7 +28,6 @@ class App extends Component {
         setTimeout(() => {
           this.setState({ starwarsChars: data.results, isLoading: false });
         }, 3000);
-        
       })
       .catch(err => {
         throw new Error(err);
@@ -36,19 +35,27 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.starwarsChars)
     return (
       <div>
-         <header>
-          <img src="http://localhost:3000/images/logo.png" alt="star wars logo" width="300px"/>
+        <header>
+          <img
+            src="
+            /images/logo.png"
+            alt="star wars logo"
+            width="300px"
+          />
         </header>
-      <div className="container">
-        <div className="row">
-        {this.state.isLoading ? <Loading /> : this.state.starwarsChars.map((characters, index) => {
-          return <Characters characters={characters} key={index} />
-        }) }
-      </div>
-      </div>
+        <div className="container">
+          <div className="row">
+            {this.state.isLoading ? (
+              <Loading />
+            ) : (
+              this.state.starwarsChars.map((characters, index) => {
+                return <Characters characters={characters} key={index} />;
+              })
+            )}
+          </div>
+        </div>
       </div>
     );
   }
