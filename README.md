@@ -25,12 +25,16 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [ ] React JS is a frame work that tries to solve the problem of creating UI. In vanilla JS, if you have a button that open a menu, there's now way to tell if the menu is actually open or now. With react, we can tell if that menu is open through the use of state and react accordinly. 
 
 - [ ] What does it mean to _think_ in react?
+- [ ] It refers to reacting to user actions. When a user performs an action on the screen, it will react on the scrren in real time with the newly state of the data or action
 
 - [ ] Describe state.
+- [ ] State keep track of the data and in what state it's in.
 
 - [ ] Describe props.
+- [ ] Props is parameters that are passed down through. It can be manually specified or passed down through state. It hold information that influences the output of the render function. 
 
 ## Project Set Up
 
